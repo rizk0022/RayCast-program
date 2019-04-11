@@ -158,6 +158,10 @@ public abstract class AbstractAnimator extends AnimationTimer{
 			fps.calculateFPS(now);
 		}
 		handle( now, gc);
+		if (c.getDrawLightSource()) {
+			gc.setFill( Color.MAGENTA);
+			gc.fillOval( mouse.x() - 5, mouse.y() - 5, 10, 10);
+		}
 		if(c.getDrawShapeJoints() || c.getDrawBounds()) {
 			for (int i=0;i<c.shapes().size();i++) {
 				if (c.getDrawBounds()) {

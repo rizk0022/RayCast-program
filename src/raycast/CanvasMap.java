@@ -61,6 +61,7 @@ public class CanvasMap{
 	 */
 	private List<PolyShape> shapes;
 	private IntegerProperty rayCount;
+	private PolyShape border;
 	/**
 	 * <p>
 	 * create a set of {@link BooleanProperty}s to track some drawing options.<br>
@@ -86,6 +87,7 @@ public class CanvasMap{
 	 * create a constructor and initialize all class variables.
 	 */
 	public CanvasMap(){
+		border = new PolyShape();
 		board = new Canvas();
 		rayCount = new SimpleIntegerProperty( 360);
 		drawFPS = new SimpleBooleanProperty( false);
