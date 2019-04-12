@@ -105,6 +105,8 @@ public class CanvasMap{
 	}
 	
 	public void addSampleShapes() {
+		
+		PolyShape newShape = new PolyShape().setPoints(0,0,1920,0,1920,920,0,920);
 		PolyShape p1 = new PolyShape().setPoints(600,400,500,450,550,550);
 		PolyShape p2 = new PolyShape().setPoints(25,75,250,30,350,100,25,110);
 		PolyShape p3 = new PolyShape().setPoints(520,75,500,300,670,100,580,30);
@@ -121,6 +123,7 @@ public class CanvasMap{
 		p4.setFill(Color.BLUE);
 		p4.setWidth(2);
 		p4.setStroke(Color.GRAY);
+		shapes.add(newShape);
 		shapes.add(p1);
 		shapes.add(p2);
 		shapes.add(p3);
